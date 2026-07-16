@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Table Reservation</title>
+    <title>RTRS | Reserve Your Table</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome -->
+   
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navbar -->
+    
 
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <i class="fa-solid fa-utensils"></i>
-                TableReserve
-            </div>
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-utensils"></i></span>
+                <span class="logo-text">RTRS</span>
+            </a>
 
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Restaurants</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -34,10 +39,25 @@
                 <button class="login">Login</button>
                 <button class="register">Register</button>
             </div>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbar = document.querySelector('.navbar');
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('menu-open');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        });
+    </script>
+
+
 
     <section class="hero">
 
@@ -61,7 +81,6 @@
     </section>
 
 
-    <!-- Why Choose Us -->
 
     <section class="features">
 
@@ -98,7 +117,6 @@
     </section>
 
 
-    <!-- Featured Restaurants -->
 
     <section class="restaurants">
 
@@ -143,7 +161,7 @@
     </section>
 
 
-    <!-- How it Works -->
+   
 
     <section class="steps">
 
@@ -171,13 +189,13 @@
     </section>
 
 
-    <!-- Footer -->
+   
 
     <footer>
 
-        <h2>Restaurant Table Reservation</h2>
+        <h2>RTRS</h2>
 
-        <p>Email : support@tablereserve.com</p>
+        <p>Email : hello@rtrs.com</p>
 
         <p>Phone : +91 9876543210</p>
 
@@ -189,7 +207,7 @@
 
         </div>
 
-        <p>© 2026 Restaurant Table Reservation. All Rights Reserved.</p>
+        <p>© 2026 RTRS. All Rights Reserved.</p>
 
     </footer>
 
