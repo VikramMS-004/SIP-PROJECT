@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RTRS | Reserve Your Table</title>
+    <title>DineSpot | Reserve Your Table</title>
 
     <link rel="stylesheet" href="style.css">
 
-   
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    
-
     <header>
         <nav class="navbar">
             <a href="#" class="logo">
-                <span class="logo-icon"><i class="fa-solid fa-utensils"></i></span>
-                <span class="logo-text">RTRS</span>
+                <svg class="logo-mark" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="17" cy="25" rx="16" ry="3" fill="#d9d9d9"/>
+                    <path d="M4 23 a13 13 0 0 1 26 0 z" fill="#d35400"/>
+                    <rect x="2" y="23" width="30" height="4" rx="2" fill="#e67e22"/>
+                    <circle cx="17" cy="8" r="3" fill="#2c2c2c"/>
+                </svg>
+                <span class="logo-text">Dine<span class="accent">Spot</span></span>
             </a>
 
             <ul class="nav-links">
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Offers</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -58,64 +61,73 @@
     </script>
 
 
-
     <section class="hero">
 
-        <div class="overlay">
+        <div class="hero-inner">
 
-            <h1>Reserve Your Perfect Dining Experience</h1>
+            <div class="hero-content">
 
-            <p>
-                Book your favorite restaurant in just a few clicks.
-                Discover the best restaurants around you and enjoy a
-                hassle-free dining experience.
-            </p>
+                <h1>Reserve Your <span class="highlight">Perfect Dining</span> Experience</h1>
 
-            <div class="hero-btns">
-                <button>Book Now</button>
-                <button class="outline">Explore Restaurants</button>
+                <p>
+                    Book your favorite restaurant in just a few clicks.
+                    Discover the best restaurants around you and enjoy a
+                    hassle-free dining experience.
+                </p>
+
+                <div class="hero-btns">
+                    <button class="cta-btn primary"><i class="fa-solid fa-calendar-check"></i> Book Now</button>
+                    <button class="cta-btn outline"><i class="fa-solid fa-location-dot"></i> Explore Restaurants</button>
+                </div>
+
             </div>
+
+           <div class="hero-visual">
+    <img src="images/reservation.png" alt="Restaurant Table Reservation">
+           </div>
 
         </div>
 
     </section>
 
 
+    <section class="feature-strip-wrap">
+        <div class="feature-strip">
 
-    <section class="features">
-
-        <h2>Why Choose Us?</h2>
-
-        <div class="feature-container">
-
-            <div class="card">
-                <i class="fa-solid fa-calendar-check"></i>
-                <h3>Easy Booking</h3>
-                <p>Reserve your table anytime in seconds.</p>
+            <div class="feature-item">
+                <div class="icon-circle"><i class="fa-solid fa-calendar-check"></i></div>
+                <div>
+                    <h3>Easy Booking</h3>
+                    <p>Reserve your table anytime in seconds.</p>
+                </div>
             </div>
 
-            <div class="card">
-                <i class="fa-solid fa-bowl-food"></i>
-                <h3>Top Restaurants</h3>
-                <p>Discover the best restaurants near you.</p>
+            <div class="feature-item">
+                <div class="icon-circle"><i class="fa-solid fa-store"></i></div>
+                <div>
+                    <h3>Top Restaurants</h3>
+                    <p>Discover the best restaurants near you.</p>
+                </div>
             </div>
 
-            <div class="card">
-                <i class="fa-solid fa-bell"></i>
-                <h3>Instant Confirmation</h3>
-                <p>Receive booking confirmation instantly.</p>
+            <div class="feature-item">
+                <div class="icon-circle"><i class="fa-solid fa-bell"></i></div>
+                <div>
+                    <h3>Instant Confirmation</h3>
+                    <p>Receive booking confirmation instantly.</p>
+                </div>
             </div>
 
-            <div class="card">
-                <i class="fa-solid fa-lock"></i>
-                <h3>Secure Booking</h3>
-                <p>Your reservation details are safe and secure.</p>
+            <div class="feature-item">
+                <div class="icon-circle"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                    <h3>Secure Booking</h3>
+                    <p>Your reservation details are safe and secure.</p>
+                </div>
             </div>
 
         </div>
-
     </section>
-
 
 
     <section class="restaurants">
@@ -161,27 +173,36 @@
     </section>
 
 
-   
-
     <section class="steps">
 
         <h2>How It Works</h2>
+        <div class="section-underline"></div>
 
         <div class="step-container">
 
             <div class="step">
-                <i class="fa-solid fa-store"></i>
+                <span class="step-number">1</span>
+                <div class="icon-circle"><i class="fa-solid fa-store"></i></div>
                 <h3>Select Restaurant</h3>
+                <p>Choose your favorite restaurant.</p>
             </div>
 
+            <div class="step-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
             <div class="step">
-                <i class="fa-solid fa-chair"></i>
+                <span class="step-number">2</span>
+                <div class="icon-circle"><i class="fa-solid fa-chair"></i></div>
                 <h3>Choose Table</h3>
+                <p>Pick your preferred table and time slot.</p>
             </div>
 
+            <div class="step-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
             <div class="step">
-                <i class="fa-solid fa-utensils"></i>
+                <span class="step-number">3</span>
+                <div class="icon-circle"><i class="fa-solid fa-utensils"></i></div>
                 <h3>Enjoy Your Meal</h3>
+                <p>Sit back and enjoy your delicious meal!</p>
             </div>
 
         </div>
@@ -189,13 +210,11 @@
     </section>
 
 
-   
-
     <footer>
 
-        <h2>RTRS</h2>
+        <h2>DineSpot</h2>
 
-        <p>Email : hello@rtrs.com</p>
+        <p>Email : hello@dinespot.com</p>
 
         <p>Phone : +91 9876543210</p>
 
@@ -207,7 +226,7 @@
 
         </div>
 
-        <p>© 2026 RTRS. All Rights Reserved.</p>
+        <p>© 2026 DineSpot. All Rights Reserved.</p>
 
     </footer>
 
